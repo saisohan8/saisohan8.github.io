@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Programming and Hacking (WAPH) - Full Syllabus</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 1024px; /* Slightly wider for the full syllabus */
+        }
+        .section-title {
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        ul.list-disc li, ol.list-decimal li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #e2e8f0; /* Tailwind's gray-200 */
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e0f2fe; /* Tailwind's blue-50 */
+            font-weight: 600;
+            color: #1e40af; /* Tailwind's blue-800 */
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc; /* Tailwind's gray-50 */
+        }
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 1rem;
+                border-radius: 0.5rem;
+                overflow: hidden;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            td:before {
+                position: absolute;
+                top: 0;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #3b82f6;
+            }
+            /* Label the data */
+            td:nth-of-type(1):before { content: "Week"; }
+            td:nth-of-type(2):before { content: "Module"; }
+            td:nth-of-type(3):before { content: "Lecture"; }
+            td:nth-of-type(4):before { content: "Assignment"; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 sm:p-6 md:p-8">
+    <div class="container mx-auto bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-10 my-8">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8 pb-4 border-b-2 border-blue-500">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-800 mb-2">Web Application Programming and Hacking</h1>
+            <p class="text-xl sm:text-2xl text-gray-600">Course Syllabus and Schedule, Summer 2025</p>
+            <p class="text-sm text-gray-500 mt-2">Latest update: May 16, 2025. This document is live on: <a href="https://bit.ly/waph-sm25" target="_blank" class="text-blue-500 hover:underline">https://bit.ly/waph-sm25</a></p>
+        </header>
+
+        <!-- General Information -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">General Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p class="mb-2"><strong class="text-blue-600">Course:</strong> CPS499-Z1/499-P1/592-Z1 "Web Application Programming and Hacking"</p>
+                    <p class="mb-2"><strong class="text-blue-600">Format:</strong> Asynchronous; lecture slides and video recordings posted twice a week on Canvas.</p>
+                    <p class="mb-2"><strong class="text-blue-600">Instructor:</strong> Dr. Phu Phung, Associate Professor, Department of Computer Science</p>
+                    <p class="mb-2"><strong class="text-blue-600">Email:</strong> <a href="mailto:phu@udayton.edu" class="text-blue-500 hover:underline">phu@udayton.edu</a></p>
+                    <p class="mb-2"><strong class="text-blue-600">Instructor Homepage:</strong> <a href="https://go.udayton.edu/phu" target="_blank" class="text-blue-500 hover:underline">https://go.udayton.edu/phu</a></p>
+                </div>
+                <div>
+                    <p class="mb-2"><strong class="text-blue-600">Grader:</strong> Amruth Raj Bitla</p>
+                    <p class="mb-2"><strong class="text-blue-600">Grader Email:</strong> <a href="mailto:bitlaa1@udayton.edu" class="text-blue-500 hover:underline">bitlaa1@udayton.edu</a></p>
+                    <p class="mb-2"><strong class="text-blue-600">Online Office Hours:</strong> Wednesdays, 10:00 AM – 12:00 PM (Must be booked via <a href="https://calendly.com/phungphu/waph" target="_blank" class="text-blue-500 hover:underline">Calendly</a> at least one hour in advance)</p>
+                    <p class="mb-2"><strong class="text-blue-600">In-person Help Session & Office Hours:</strong> Wednesdays, 2:00 PM – 3:30 PM in JHH 180 (No booking required)</p>
+                    <p class="text-sm text-gray-500 italic">Additional slots available upon request for both online and in-person.</p>
+                </div>
+            </div>
+            <p class="mt-4"><strong class="text-blue-600">Course Materials:</strong> All course materials, such as the syllabus, major assignments, and handouts, can be found on the course page located on Canvas &rarr; Courses &rarr; 25_SU_FT_CPS_499/592_Z1 (Direct link &rarr;)</p>
+        </section>
+
+        <!-- Course Description -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Course Description</h2>
+            <p class="mb-2">
+                In this course, students will study basic web application development with front-end (HTML5, JavaScript, CSS) and back-end (PHP/MySQL).
+                Web application vulnerabilities and attacks will be introduced and explored with hands-on exercises on the range. Secure programming principles and practices will be introduced to avoid potential web application vulnerabilities and attacks.
+            </p>
+            <p class="text-sm text-gray-600 italic">
+                <strong class="text-blue-600">Recommended Prerequisites:</strong> Intermediate programming skills in any language.
+            </p>
+        </section>
+
+        <!-- Topics -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Topics</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>The Web and Web Applications</li>
+                <li>Client-side Web Development with HTML5, CSS, and JavaScript</li>
+                <li>Server-side Web Application Development with PHP and Database (MySQL)</li>
+                <li>Version control (git)</li>
+                <li>Web Application Security: Vulnerabilities and Attacks with Hands-on Exercises</li>
+                <li>Secure Web Programming Principles and Practices</li>
+            </ul>
+        </section>
+
+        <!-- Course Goals and Objectives -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Course Goals and Objectives</h2>
+            <p class="mb-4">Students will have the ability to:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Obtain the ability and skills to effectively use state-of-the-art techniques in web application development and security tools for the analysis, design, and implementation of secure web systems.</li>
+                <li>Enhance students' programming skills to develop secure, robust, sustainable software products.</li>
+                <li>Establish security analysis skills to identify and avoid potential web vulnerabilities.</li>
+                <li>Identify the types of security threats and perform attacks in web applications and adopt corresponding countermeasures to prevent such attacks.</li>
+                <li>Obtain the ability and skills to apply practical knowledge of security in designing and implementing web applications with contemporary programming technologies.</li>
+            </ul>
+        </section>
+
+        <!-- Course Outcomes -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Course Outcomes</h2>
+            <p class="mb-4">Upon successful completion of this course, students will be able to:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Design, implement, and evaluate a web-based solution to meet a given set of computing requirements in the context of the program's discipline.</li>
+                <li>Understand the principle aspects of concepts of web application security.</li>
+                <li>Identify and discuss the types of security threats and attacks in web applications and practical experience with hands-on exercises.</li>
+                <li>Adopt corresponding countermeasures to identified threats in web applications and argue their effectiveness.</li>
+                <li>Apply practical knowledge of security in designing and implementing web applications with contemporary technologies.</li>
+            </ul>
+        </section>
+
+        <!-- Textbook -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Textbook</h2>
+            <p class="mb-2">There is no required textbook for this course. Lecture handouts are provided for every class.</p>
+            <p class="mb-2">A good reference book (Free PDF online): "Learning PHP, MySQL & JavaScript: A Step-by-Step Guide to Creating Dynamic Websites," Robin Nixon, O'Reilly Media, 6th Edition (2021).</p>
+            <p class="text-sm text-gray-600 italic">Additional readings will be posted correspondingly before lectures.</p>
+        </section>
+
+        <!-- Technology Requirements -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Technology Requirements</h2>
+            <p class="mb-2">You are required to have a laptop/computer to run a Linux virtual machine for hands-on exercises, e.g., labs, individual projects, and a team project. You need to install <a href="https://www.virtualbox.org/" target="_blank" class="text-blue-500 hover:underline">VirtualBox</a> and then install an Ubuntu 22.04 virtual machine on your laptop/computer. Alternatively, you will be provided with an online virtual machine to use during the semester. Detailed instructions will be provided in the second class.</p>
+            <p class="mt-4"><strong class="text-blue-600">The Shell and Git video tutorials:</strong></p>
+            <p class="mb-2">This class heavily uses Shell and Git. If you are not familiar with the Shell, we strongly recommend you do some hands-on exercises on the first topic, "The Shell": <a href="https://missing.csail.mit.edu/2020/course-shell/" target="_blank" class="text-blue-500 hover:underline">https://missing.csail.mit.edu/2020/course-shell/</a> from a free MIT course "The Missing Semester of Your CS Education."</p>
+            <p class="mb-2">We will provide hands-on exercises for Git during the labs. However, if you have never used Git before, it is strongly recommended you practice the Git lecture <a href="https://missing.csail.mit.edu/2020/version-control/" target="_blank" class="text-blue-500 hover:underline">https://missing.csail.mit.edu/2020/version-control/</a> in the above course to avoid any Git issues during the code development.</p>
+        </section>
+
+        <!-- Classroom Protocol and Requirements -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Classroom Protocol and Requirements</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Video recordings will be released around 5:00 PM or earlier on Tuesdays and Thursdays. Required to watch within 24 hours on Canvas.</li>
+                <li>A random survey will be placed in a video; respond within 24 hours for a 5% class engagement grade.</li>
+                <li><strong class="text-blue-600">Multiple-choice quizzes in lectures:</strong> Each class will have instant multiple-choice quizzes on Canvas. Submit answers before the following week for 5% toward your final grade. Questions may be randomly selected for the final exam.</li>
+                <li><strong class="text-blue-600">Advice and class communication:</strong> Skipping lecture videos is highly discouraged. Inform the instructor if you must miss a class/deadline.</li>
+                <li>No email communication encouraged. Use the <strong class="text-blue-600">Discussions board on Canvas</strong> for questions/discussions. Public questions encouraged. Active participation earns a 1% bonus.</li>
+                <li>For direct questions to instructor/grader, use Instant Chat in the UDayton Gmail system.</li>
+            </ul>
+        </section>
+
+        <!-- Submission Policy -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Submission Policy</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Assignments must be submitted on Canvas &rarr; Assignments. Submissions via email or other channels will NOT be graded.</li>
+                <li>Start working on each submission when released, ideally during hands-on activities while watching lecture videos.</li>
+                <li>To encourage early submission, there will be a <strong class="text-blue-600">0.05% bonus every hour before the original deadline (up to 3% maximum bonus)</strong>.</li>
+                <li>Late submissions are allowed until the end of Week 11 (Sunday, August 3, 2025, at 11:59 pm). Every 24 hours late submission will be automatically deducted 1% in grade by Canvas. You will get at least 77% credit for late submissions.</li>
+                <li>Strongly recommended to AVOID late submissions as they can negatively impact learning and grades.</li>
+                <li>Missed assignments will be graded 0 automatically by Canvas.</li>
+            </ul>
+        </section>
+
+        <!-- Academic Integrity -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Academic Integrity</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Discussion with classmates encouraged, but individual graded work must be your own.</li>
+                <li>For teamwork, all members are responsible for content.</li>
+                <li>Instructor will check for plagiarism. Cite all words or ideas from others.</li>
+                <li>Refer to the University's Academic Honor Code for specific policies. Violations will not be tolerated.</li>
+            </ul>
+        </section>
+
+        <!-- Assessments and Grading Policy -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Assessments and Grading Policy</h2>
+            <p class="mb-4">Your performance and course outcomes will be assessed via:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Class engagement and multiple-choice quizzes (weekly)</li>
+                <li>Hands-on lab exercises (4)</li>
+                <li>Hackathon exercises (4)</li>
+                <li>Individual projects (2)</li>
+                <li>A team project</li>
+                <li>A final exam</li>
+            </ul>
+            <p class="mb-4">Your final grade will depend (tentative percentages):</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">5%</strong> - Multiple-choice quizzes
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">5%</strong> - Online class engagement
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">25%</strong> - Hands-on lab exercises
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">15%</strong> - Hackathon exercises
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">30%</strong> - Individual projects
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">10%</strong> - Team project
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <strong class="text-blue-700">10%</strong> - Final exam
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-600 italic">Your final grade will be based on your total grade percentage and will be scaled to a corresponding letter grade following the University's grade schema.</p>
+        </section>
+
+        <!-- Course Schedule -->
+        <section class="mb-8 card">
+            <h2 class="text-2xl font-bold text-blue-700 section-title">Course Schedule</h2>
+            <p class="mb-4 text-sm text-gray-600 italic">The schedule is subject to change with 24-hour notice via the Canvas announcement. The academic calendar is available <a href="#" target="_blank" class="text-blue-500 hover:underline">here</a>.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Module</th>
+                            <th>Lecture</th>
+                            <th>Assignment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.<br>May 19</td>
+                            <td>0. Introduction and Preparation</td>
+                            <td>1. Introduction to Web application programming and the Course</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>2. Development Environment Setup - Lab 0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2.<br>May 27</td>
+                            <td>1. Foundations of the Web<br>Front-end Web Development</td>
+                            <td>3. Foundations of the Web - Lab 1</td>
+                            <td>Lab 0 submission</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>4. Front-end web development with basic HTML and JavaScript - Lab 2.1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3.<br>June 2</td>
+                            <td></td>
+                            <td>5. Front-end development with Ajax, CSS, and jQuery Lab 2.2</td>
+                            <td>Lab 1 submission</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Integration with Web services/APIs & Front-end deployment on the Cloud<br>Individual Project 1-A Professional homepage with API Integration on GitHub.io</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4.<br>June 9</td>
+                            <td>Front-end Web Security</td>
+                            <td>7. Web Applications: Client-side Security and Server-side Technologies, Security and Standards</td>
+                            <td>Lab 2 submission</td>
+                        </tr>
+                        <tr>
+                            <td>5.<br>June 16</td>
+                            <td>4. Secure Back-end Web Application Development in PHP/MySQL</td>
+                            <td>8. Client-side Web & JavaScript Security<br>Hackathon 1: Cross-site scripting attacks and defenses</td>
+                            <td>Hackathon 1 submission on Sunday</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>9. Web Application Development in PHP with Cookies and Sessions</td>
+                            <td>Project 1 submission on Sunday</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2" class="text-center font-semibold bg-red-100 text-red-800">No lecture (Juneteenth Holiday)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6.<br>June 23</td>
+                            <td></td>
+                            <td>10. Introduction to Databases & MySQL.<br>(Insecure) Database Programming with PHP/MySQL - Lab 3.1</td>
+                            <td>Team formation</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>11. Database Security & SQL Injection Attacks</td>
+                            <td>Hackathon 2 submission on Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>7.<br>June 30</td>
+                            <td></td>
+                            <td>12. Hackathon 2: SQL Injection Attacks</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>13. Secure Database Programming with Prepared Statements - Lab 3-d</td>
+                            <td>Lab 3 submission on Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>8.<br>July 7</td>
+                            <td>5. Secure Session Management and Authentication</td>
+                            <td>14. Session Management and (Insecure) Session Authentication - Lab 4.1&2</td>
+                            <td>Team confirmation</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>15. HTTPS and Secure Session Management - Lab 4.3<br>Team project introduction and teamwork preparation</td>
+                            <td>Lab 4 submission on Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>9.<br>July 14</td>
+                            <td></td>
+                            <td>16. Hackathon 3: Session Hijacking Attacks and Defenses<br>Team Project Sprint 0 Tutorial</td>
+                            <td>Team project preparation submission (individual, 10 pts)<br>Hackathon 3 submission on Wednesday 11:59 PM</td>
+                        </tr>
+                        <tr>
+                            <td>10.<br>July 21</td>
+                            <td>6. Secure Database Manipulation in Web Applications</td>
+                            <td>17. Database Manipulation Use Cases<br>Individual Project 2 - Full-stack Web Application</td>
+                            <td>Team project Sprint 0 submission (individual, 10 pts)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>18. Secure Database Modification & Cross-site request forgery (CSRF) attacks and defenses<br>Team project Sprint 1 & tutorial</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>19. Hackathon 4: Cross-site Request Forgery Attacks</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11.<br>July 28</td>
+                            <td>7. Advanced Topics in Web Applications</td>
+                            <td>20. Database access control<br>Team project Sprint 2 & tutorial</td>
+                            <td>Team project Sprint 1 submission (individual, 15 pts)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>21. WebSocket and real-time web applications</td>
+                            <td>Project 2 submission on Friday at 11:59 pm</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="3" class="text-center font-semibold bg-blue-100 text-blue-800">All individual assignments and submissions (i.e., labs, hackathons, and individual projects) are closed at 11:59 PM on Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>12.<br>Aug. 4</td>
+                            <td></td>
+                            <td>22. Team project Sprint 3 & tutorial</td>
+                            <td>Team project Sprint 2 submission (individual, 15 pts)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>8. Course reflection and assessment</td>
+                            <td>23. Course Reflections and Review for the Final Exam</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13.<br>Aug. 11</td>
+                            <td></td>
+                            <td>Team project presentations (optional)</td>
+                            <td>Team Project Final Submission on Wednesday 11:59 PM (team, 100 pts)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Final Exam (multiple-choice on Thursday 6:00 pm in Canvas)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 pt-4 border-t-2 border-blue-200 text-gray-500 text-sm">
+            <p>Summer 2025 - Web Application Programming and Hacking - Full Syllabus</p>
+        </footer>
+
+    </div>
+</body>
+</html>
